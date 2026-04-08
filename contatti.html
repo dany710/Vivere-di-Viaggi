@@ -77,20 +77,69 @@
 <span class="text-xl font-bold text-primary tracking-tighter">Vivere di Viaggi</span>
 </a>
 <div class="hidden md:flex gap-8 items-center">
-<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="destinazioni.html">Destinations</a>
-<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="chi-siamo.html">Mission</a>
-<a class="font-medium text-sm tracking-tight text-primary border-b-2 border-primary pb-1" href="index.html">Opportunities</a>
-<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="membership.html">Pricing</a>
-<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="contatti.html">Contact</a>
+<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="destinazioni.html">Destinazioni</a>
+<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="chi-siamo.html">Chi Siamo</a>
+<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="membership.html">Membership</a>
+<a class="font-medium text-sm tracking-tight text-primary border-b-2 border-primary pb-1" href="contatti.html">Contatti</a>
 </div>
 <div class="flex items-center gap-4">
-<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors hidden sm:block" href="membership.html">Login</a>
+<a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors hidden md:block" href="membership.html">Entra</a>
 <div class="flex items-center gap-2">
-<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium text-sm tracking-tight shadow-lg shadow-primary/20 hover:opacity-90 transition-all" href="membership.html">Join Now</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium text-sm tracking-tight shadow-lg shadow-primary/20 hover:opacity-90 transition-all" href="membership.html">Inizia Ora</a>
 <img alt="Small Logo" class="h-8 w-auto md:block hidden logo-img" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
 </div>
+<button class="md:hidden p-2 text-on-surface" id="mobile-menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </div>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-white z-[60] transform translate-x-full transition-transform duration-300 md:hidden" id="mobile-menu">
+<div class="flex flex-col h-full p-8">
+<div class="flex justify-between items-center mb-12">
+<img alt="Vivere di Viaggi Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<button class="p-2" id="mobile-menu-close">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="text-2xl font-headline font-bold text-on-surface" href="index.html">Home</a>
+<a class="text-2xl font-headline font-bold text-on-surface" href="destinazioni.html">Destinazioni</a>
+<a class="text-2xl font-headline font-bold text-on-surface" href="chi-siamo.html">Chi Siamo</a>
+<a class="text-2xl font-headline font-bold text-on-surface" href="membership.html">Membership</a>
+<a class="text-2xl font-headline font-bold text-on-surface" href="contatti.html">Contatti</a>
+</div>
+<div class="mt-auto pt-8 border-t border-surface-container">
+<button class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold mb-4 shadow-lg">Inizia Ora</button>
+<a class="flex items-center justify-center gap-2 text-secondary font-bold" href="https://wa.me/393792529083">
+<span class="material-symbols-outlined">chat</span>
+                  Supporto WhatsApp
+                </a>
+</div>
+</div>
+</div>
+<script>
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const menuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuToggle && menuClose && mobileMenu) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+            });
+            menuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+            // Close menu when clicking on links
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                });
+            });
+        }
+    </script>
 </nav>
 <main class="pt-16">
 <!-- Hero Section -->
@@ -99,7 +148,7 @@
 <img alt="Luxury Cruise Travel" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50 z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXzQrm9wLienTH0P__giEkOEJtrLZ238wGvWb3kHbNfXyV0DELV5uhzMHX4DI5JduHQu0nerKGcU1zEdXkffHMZoZRLqyuKSE3ssUABUmZkgT10TAWc3qOC_If7QPgVdUJ7SxAIBexGYu5HwPV1cO4vZBD_4dL3t20HyPsCWN65DTAg-x-KKLk0zYWCLN26hnuNgsVBtRq4bBrWlmYxpj30NMOQf1AcT73q6-KMUcAQex5tIV9zugwTMWWpXLtYsf_Sk1WLxKfEXFj"/>
 <div class="relative z-10 max-w-7xl mx-auto px-8 w-full grid md:grid-cols-2 gap-12 items-center">
 <div class="text-on-primary-container">
-<span class="inline-block px-4 py-1.5 rounded-lg bg-white/20 border border-white/30 text-on-primary-container text-[10px] font-semibold tracking-widest uppercase mb-6">Partner Independent inCruises</span>
+<span class="inline-block px-4 py-1.5 rounded-lg bg-white/20 border border-white/30 text-on-primary-container text-[10px] font-semibold tracking-widest uppercase mb-6">Partner Indipendente inCruises</span>
 <h1 class="text-[3.5rem] leading-[1.1] font-bold tracking-tight mb-6">
                         Costruisci il Tuo Futuro nel Turismo
                     </h1>
@@ -348,11 +397,11 @@
 </ul>
 </div>
 <div>
-<h4 class="font-bold text-sm uppercase tracking-widest mb-6 text-on-surface">Legal</h4>
+<h4 class="font-bold text-sm uppercase tracking-widest mb-6 text-on-surface">Legale</h4>
 <ul class="space-y-4">
 <li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
 <li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
-<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a></li>
+<li><a class="text-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Termini</a></li>
 </ul>
 </div>
 </div>
