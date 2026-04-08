@@ -105,11 +105,55 @@
 <button class="hidden md:block text-slate-600 dark:text-slate-300 font-medium text-sm hover:opacity-80 transition-opacity">Login</button>
 <div class="flex items-center gap-3">
 <button class="bg-primary text-on-primary px-6 py-2 rounded-lg text-sm font-bold scale-95 active:scale-90 duration-200 hover:opacity-90 transition-opacity">Join Now</button>
+<button id="menu-toggle" class="md:hidden p-2 text-slate-600">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <img alt="Vivere di Viaggi Logo" class="h-8 w-auto object-contain hidden lg:block" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
 </div>
 </div>
 </div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-white transform translate-x-full transition-transform duration-300 md:hidden">
+<div class="flex flex-col h-full p-8">
+<div class="flex justify-between items-center mb-8">
+<img alt="Vivere di Viaggi Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<button id="menu-close" class="p-2">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-xl font-bold">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="destinazioni.html">Destinazioni</a>
+<a class="hover:text-primary transition-colors" href="chi-siamo.html">Chi Siamo</a>
+<a class="hover:text-primary transition-colors" href="membership.html">Membership</a>
+<a class="hover:text-primary transition-colors" href="contatti.html">Contatti</a>
+</nav>
+<div class="mt-auto flex flex-col gap-4">
+<a class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold text-center" href="membership.html">Diventa Partner</a>
+<a class="w-full py-4 border border-primary text-primary rounded-lg font-bold text-center" href="membership.html">Entra nel Club</a>
+</div>
+</div>
+</div>
+
+<script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle?.addEventListener('click', () => {
+        mobileMenu?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose?.addEventListener('click', () => {
+        mobileMenu?.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+    });
+</script>
+
 <main>
 <!-- Hero Section -->
 <section class="relative h-[870px] min-h-[600px] flex items-center overflow-hidden">

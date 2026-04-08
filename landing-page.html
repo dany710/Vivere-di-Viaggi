@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vivere di Viaggi - Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "surface-dim": "#d1daf4",
+                        "on-secondary-container": "#694000",
+                        "secondary-fixed-dim": "#ffb961",
+                        "on-tertiary-fixed": "#121b2e",
+                        "on-secondary-fixed": "#2b1700",
+                        "on-surface-variant": "#424753",
+                        "primary-fixed-dim": "#abc7ff",
+                        "outline-variant": "#c2c6d5",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001b3f",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#8d96ae",
+                        "on-secondary": "#ffffff",
+                        "background": "#faf9ff",
+                        "primary-fixed": "#d7e2ff",
+                        "on-tertiary-fixed-variant": "#3e475c",
+                        "surface-container-highest": "#dae2fd",
+                        "tertiary": "#555e74",
+                        "on-background": "#121b2e",
+                        "on-secondary-fixed-variant": "#663e00",
+                        "surface-container": "#e9edff",
+                        "on-primary-container": "#002d62",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf9ff",
+                        "outline": "#727784",
+                        "on-surface": "#121b2e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#bec6e0",
+                        "surface-tint": "#5395FD",
+                        "primary": "#5395FD",
+                        "surface-container-low": "#f1f3ff",
+                        "tertiary-fixed": "#dae2fd",
+                        "inverse-primary": "#abc7ff",
+                        "on-primary-fixed-variant": "#00458f",
+                        "secondary": "#865300",
+                        "secondary-container": "#fea520",
+                        "on-tertiary-container": "#262e43",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#dae2fd",
+                        "inverse-surface": "#283044",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#faf9ff",
+                        "primary-container": "#5395fd",
+                        "secondary-fixed": "#ffddb9",
+                        "surface-container-high": "#e1e8ff"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                },
+                "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Work Sans"]
+                }
+              },
+            },
+          }
+        </script>
+    <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+            .tonal-shift-surface-container-low {
+                background-color: #f1f3ff;
+            }
+            .text-shadow-sm {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+        </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md shadow-xl shadow-slate-900/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3" href="index.html">
+<img alt="Vivere di Viaggi Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<span class="text-2xl font-bold tracking-tighter text-slate-900">Vivere di Viaggi</span>
+</a>
+</div>
+<div class="hidden md:flex items-center space-x-8 font-headline text-body-lg tracking-tight">
+<a class="text-slate-600 font-medium hover:text-primary transition-colors duration-300" href="destinazioni.html">Destinations</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-colors duration-300" href="membership.html">Memberships</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-colors duration-300" href="chi-siamo.html">Chi Siamo</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-colors duration-300" href="contatti.html">Contatti</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-slate-600 font-medium hover:text-primary transition-colors">Sign In</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold hover:bg-primary/90 transition-transform active:scale-95 duration-200">Join Now</button>
+<button id="menu-toggle" class="md:hidden p-2 text-slate-600">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<img alt="Vivere di Viaggi Emblem" class="h-10 w-auto ml-4 hidden lg:block" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</div>
+</div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-white transform translate-x-full transition-transform duration-300 md:hidden">
+<div class="flex flex-col h-full p-8">
+<div class="flex justify-between items-center mb-8">
+<img alt="Vivere di Viaggi Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<button id="menu-close" class="p-2">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-xl font-bold">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="destinazioni.html">Destinazioni</a>
+<a class="hover:text-primary transition-colors" href="chi-siamo.html">Chi Siamo</a>
+<a class="hover:text-primary transition-colors" href="membership.html">Membership</a>
+<a class="hover:text-primary transition-colors" href="contatti.html">Contatti</a>
+</nav>
+<div class="mt-auto flex flex-col gap-4">
+<a class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold text-center" href="membership.html">Diventa Partner</a>
+<a class="w-full py-4 border border-primary text-primary rounded-lg font-bold text-center" href="membership.html">Entra nel Club</a>
+</div>
+</div>
+</div>
+
+<script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle?.addEventListener('click', () => {
+        mobileMenu?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose?.addEventListener('click', () => {
+        mobileMenu?.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+    });
+</script>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Cinematic high-angle shot of a majestic luxury cruise ship cutting through deep blue oceanic waves during a golden hour sunset, showing premium deck facilities and sparkling pools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0xGWFgPwgcSRGhqAATzbtgyAZf4iWXYaOefW1vbYbZ0rnfvZPG-V6mUSLgW5enrH6vG9Ewn0d7v5tQqsyIFhbGMgJcZqSe_Jvrv2H_XrPfAi6AldkOODSNj0274GKwwUcyRvMKPt6fzMLhfI30o3Mnyyde_z8QKTreI-j5hM-HvW24eJv0GuJIrEg7l7yozj9b817tSxkd40khwsM3DblkEEixIjqzlpILH8AAKG1yAwbDpOq0Wu16AUBmfqG9kD6WJcjvxHIw-g6"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight leading-tight mb-6">
+                    Viaggia nel Lusso al Metà del Prezzo
+                </h1>
+<p class="text-xl md:text-2xl font-body mb-10 text-white/90 leading-relaxed">
+                    Accedi alle tariffe segrete riservate ai membri del club più esclusivo d'Europa. Trasforma ogni viaggio in un'esperienza d'élite.
+                </p>
+<a class="inline-flex items-center justify-center bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:scale-105 transition-all duration-300 group" href="#qualify">
+                    Scopri Come
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Problem/Solution Section -->
+<section class="py-24 bg-surface" id="qualify">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative rounded-lg overflow-hidden shadow-2xl transform -rotate-2">
+<img class="w-full" data-alt="Close-up of a professional luxury cruise cabin with a balcony overlooking the crystal clear turquoise sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWBPzHzJFehtiqBgeEMdmkTtz8s-No8jUksx6AzlWsj9CqCYoYeSLOUrthaJc_0JTy36tOhwZwv8FsFZArf7OLdVxvlOtTzWz6JdMbIKGmkkvqb1hIfkUD5_hexbrnfBvK0JnY02yNOui21aLt3Ey3GCUtP8QXw9MQtw_xgOHj4fBYa3DhhpC6m65QYVOrRXxjUi8TS72M6Gyc6yfZVpwn8lp5_VeDt0SgT9mQt8O1N9Ryn1Ez2bI1lBZA34DGWD9IRQ6E7j5ZAXec"/>
+</div>
+</div>
+<div>
+<span class="font-label text-secondary font-semibold tracking-widest uppercase mb-4 block">Perché Pagare di Più?</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-8 leading-tight">Il segreto che le agenzie di viaggio non vogliono che tu sappia.</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>Le agenzie tradizionali e i siti di booking online caricano commissioni fino al 40% sul prezzo finale. Il nostro modello elimina gli intermediari.</p>
+<div class="flex items-start gap-4 bg-surface-container-low p-6 rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<p><strong class="text-on-surface">Prezzi di Ingrosso:</strong> Accedi direttamente alle tariffe B2B solitamente riservate solo agli addetti ai lavori del settore crocieristico e alberghiero.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof/Logos -->
+<section class="py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<p class="font-label text-slate-500 mb-10 tracking-[0.2em] uppercase text-sm">Partner Navali d'Elite</p>
+<div class="flex flex-wrap justify-center items-center gap-12 duration-500">
+<div class="relative w-full flex justify-center py-4">
+<img alt="Cruise Line Partners" class="max-w-full h-16 md:h-20 object-contain filter-none" src="https://lh3.googleusercontent.com/aida/ADBb0ujAJO_ObkmffpQku8aTTA4wpGumc-dITzyl-felsAbWWsqA7mg4MYW1ZuMITVlm8mfz3pIp9Nom4h867SByBcjgK4emAnUgQ_nWrjxqWnwJQX-Rd71pP7THGYPWtvzDOgNIWyplNnBdL6QhBv7oSqgbWITcUk-TdL17mScJ-dRLxF6kxlmWO4L2EUsBH_JvKozA317kwj1eAgt9cVdogsxNFTQYHbY6uWp4ysN67ETxQR3LWxRYSKyHDg2J200VsJUharFLXIjHxEc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Benefits -->
+<section class="py-24 bg-surface-container-lowest overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold text-on-surface text-center mb-4">Vantaggi Esclusivi per i Membri</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface p-10 rounded-lg hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">savings</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Risparmio Garantito</h3>
+<p class="text-on-surface-variant leading-relaxed">Accedi a tariffe imbattibili su oltre 5.000 rotte crocieristiche in tutto il mondo.</p>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface p-10 rounded-lg hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center translate-y-4 border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">concierge</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Servizio Premium</h3>
+<p class="text-on-surface-variant leading-relaxed">Consulenti di viaggio dedicati pronti ad assisterti nella pianificazione della tua vacanza perfetta.</p>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface p-10 rounded-lg hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center border border-outline-variant/10">
+<div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">public</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Destinazioni Globali</h3>
+<p class="text-on-surface-variant leading-relaxed">Dai Caraibi al Mar Glaciale Artico, il mondo non ha più confini per il tuo portafoglio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Highlight (2X Points) -->
+<section class="py-24 bg-primary text-white relative overflow-hidden" id="memberships">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10">
+<span class="material-symbols-outlined text-[400px] absolute -top-20 -right-20">loyalty</span>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2">
+<span class="bg-secondary text-on-secondary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">Loyalty Multiplier</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-8 leading-tight">Il tuo valore raddoppia con noi.</h2>
+<p class="text-xl mb-8 text-white/90 leading-relaxed">I nostri piani Classic e Premium includono il sistema <strong>2X Reward Points</strong>. Per ogni Euro speso, accumuli il doppio del valore per i tuoi viaggi futuri.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+<div class="text-3xl font-bold text-secondary-container">2X</div>
+<div class="text-sm font-label uppercase tracking-wider">Reward Speed</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+<div class="text-3xl font-bold text-secondary-container">∞</div>
+<div class="text-sm font-label uppercase tracking-wider">No Expiration</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 w-full">
+<div class="bg-white rounded-xl p-8 text-on-surface shadow-2xl relative">
+<div class="flex justify-between items-center mb-8">
+<div>
+<p class="text-slate-500 font-label uppercase text-xs">Preferred Plan</p>
+</div></div></div></div></div></section>
+</body>
+</html>
