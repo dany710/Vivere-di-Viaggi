@@ -87,11 +87,38 @@
 <a class="font-medium text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors hidden sm:block" href="membership.html">Login</a>
 <div class="flex items-center gap-2">
 <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium text-sm tracking-tight shadow-lg shadow-primary/20 hover:opacity-90 transition-all" href="membership.html">Join Now</a>
+<button id="menu-toggle" class="md:hidden p-2 text-slate-600">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <img alt="Small Logo" class="h-8 w-auto md:block hidden logo-img" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
 </div>
 </div>
 </div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-white transform translate-x-full transition-transform duration-300 md:hidden">
+<div class="flex flex-col h-full p-8">
+<div class="flex justify-between items-center mb-8">
+<img alt="Vivere di Viaggi Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<button id="menu-close" class="p-2">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-xl font-bold">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="destinazioni.html">Destinazioni</a>
+<a class="hover:text-primary transition-colors" href="chi-siamo.html">Chi Siamo</a>
+<a class="hover:text-primary transition-colors" href="membership.html">Membership</a>
+<a class="hover:text-primary transition-colors" href="contatti.html">Contatti</a>
+</nav>
+<div class="mt-auto flex flex-col gap-4">
+<a class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold text-center" href="membership.html">Diventa Partner</a>
+<a class="w-full py-4 border border-primary text-primary rounded-lg font-bold text-center" href="membership.html">Entra nel Club</a>
+</div>
+</div>
+</div>
+
 <main class="pt-16">
 <!-- Hero Section -->
 <section class="relative overflow-hidden min-h-[600px] flex items-center py-20">
@@ -234,24 +261,24 @@
 </div>
 </div>
 <div class="md:col-span-3 p-12">
-<form class="space-y-8">
+<form id="contact-form" class="space-y-8">
 <div class="grid sm:grid-cols-2 gap-8">
 <div class="relative">
 <label class="block text-[10px] font-semibold text-outline tracking-widest uppercase mb-1">Nome Completo</label>
-<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40" placeholder="Mario Rossi" required="" type="text"/>
+<input id="contact-name" class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40" placeholder="Mario Rossi" required="" type="text"/>
 </div>
 <div class="relative">
 <label class="block text-[10px] font-semibold text-outline tracking-widest uppercase mb-1">Indirizzo Email</label>
-<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40" placeholder="mario@esempio.it" required="" type="email"/>
+<input id="contact-email" class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40" placeholder="mario@esempio.it" required="" type="email"/>
 </div>
 </div>
 <div class="relative">
 <label class="block text-[10px] font-semibold text-outline tracking-widest uppercase mb-1">Telefono</label>
-<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40" placeholder="+39 345 123 4567" required="" type="tel"/>
+<input id="contact-phone" class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40" placeholder="+39 345 123 4567" required="" type="tel"/>
 </div>
 <div class="relative">
 <label class="block text-[10px] font-semibold text-outline tracking-widest uppercase mb-1">Messaggio / Domanda</label>
-<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40 resize-none" placeholder="Parlaci dei tuoi obiettivi..." rows="4"></textarea>
+<textarea id="contact-message" class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 placeholder:text-outline/40 resize-none" placeholder="Parlaci dei tuoi obiettivi..." rows="4"></textarea>
 </div>
 <div class="flex items-center gap-2 text-xs text-on-surface-variant">
 <input class="rounded border-outline-variant text-primary focus:ring-primary" required="" type="checkbox"/>
@@ -263,6 +290,45 @@
 </button>
 </form>
 </div>
+
+<script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle?.addEventListener('click', () => {
+        mobileMenu?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose?.addEventListener('click', () => {
+        mobileMenu?.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+    });
+
+    // Contact Form to WhatsApp
+    const contactForm = document.getElementById('contact-form');
+    contactForm?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('contact-name').value;
+        const email = document.getElementById('contact-email').value;
+        const phone = document.getElementById('contact-phone').value;
+        const messageText = document.getElementById('contact-message').value;
+
+        const phoneNumber = "393792529083";
+        const message = `Nuova Candidatura da Vivere di Viaggi:\n\n` +
+                        `Nome: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Telefono: ${phone}\n` +
+                        `Messaggio: ${messageText}`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
 </div>
 </div>
 </section>
