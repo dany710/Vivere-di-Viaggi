@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#283044",
+                      "on-surface-variant": "#424753",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#d7e2ff",
+                      "error": "#ba1a1a",
+                      "outline": "#727784",
+                      "tertiary": "#555e74",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#8d96ae",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#ffb961",
+                      "surface-variant": "#dae2fd",
+                      "surface-container-low": "#f1f3ff",
+                      "inverse-on-surface": "#edf0ff",
+                      "on-secondary-container": "#694000",
+                      "surface": "#faf9ff",
+                      "tertiary-fixed": "#dae2fd",
+                      "surface-bright": "#faf9ff",
+                      "on-tertiary-fixed-variant": "#3e475c",
+                      "on-primary-container": "#002d62",
+                      "surface-tint": "#5395FD",
+                      "primary-fixed-dim": "#abc7ff",
+                      "outline-variant": "#c2c6d5",
+                      "inverse-primary": "#abc7ff",
+                      "surface-dim": "#d1daf4",
+                      "on-secondary-fixed-variant": "#663e00",
+                      "surface-container-high": "#e1e8ff",
+                      "surface-container-highest": "#dae2fd",
+                      "on-surface": "#121b2e",
+                      "on-tertiary-container": "#262e43",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#2b1700",
+                      "secondary-container": "#5395FD",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#121b2e",
+                      "background": "#faf9ff",
+                      "primary-container": "#5395FD",
+                      "on-tertiary-fixed": "#121b2e",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#ffddb9",
+                      "primary": "#5395FD",
+                      "on-primary-fixed-variant": "#00458f",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#bec6e0",
+                      "on-primary-fixed": "#001b3f",
+                      "surface-container": "#e9edff",
+                      "secondary": "#5395FD"
+              },
+              "borderRadius": {
+                      "DEFAULT": "8px",
+                      "lg": "12px",
+                      "xl": "16px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Work Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 40px 40px -4px rgba(18, 27, 46, 0.06);
+        }
+        .text-glow {
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 glass-nav shadow-sm dark:shadow-none no-border transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<a class="flex items-center" href="index.html">
+<img alt="Vivere di Viaggi Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight hover:opacity-80 transition-opacity" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight hover:opacity-80 transition-opacity" href="destinazioni.html">Destinazioni</a>
+<a class="text-primary dark:text-blue-400 border-b-2 border-primary pb-1 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight hover:opacity-80 transition-opacity" href="chi-siamo.html">Chi Siamo</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight hover:opacity-80 transition-opacity" href="membership.html">Membership</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight hover:opacity-80 transition-opacity" href="contatti.html">Contatti</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 rounded-full font-medium text-sm text-slate-600 hover:opacity-80 transition-all scale-95 active:scale-90 duration-200">Login</button>
+<img alt="Vivere di Viaggi Logo Small" class="h-8 w-auto object-contain hidden sm:block" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-bold text-sm hover:opacity-80 transition-all scale-95 active:scale-90 duration-200">Join Now</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Professional luxury cruise travel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXlBHTLnfvcHploLnrhWl7pq8wE1KpxHi8im9N4CTG-51B9J6AaF6hUeNdC2X-OFcokbE9JAUFot3DttKECICZymZH9xMxncNNgh633LkroxCIktOCtwJeVQKRrjbkbkgDVkSPqoxSImDbegPtl7FMk9rD9LmjVyPJ_9_hxz0vJyeSdwbHpoTqrZwHRs58ZFPqNUO-rMAwad3pEwOfYQLxErA7WVwJ7ACBOEBi1kKXeR5jrKWFa7wZExNy0S53_b353bOCTWj66AOh"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container/90 text-on-secondary-container font-label text-[0.75rem] uppercase tracking-widest mb-6">Verso Nuovi Orizzonti</span>
+<h1 class="text-[3.5rem] leading-[1.1] font-extrabold text-white tracking-tight text-glow mb-8 font-headline">
+                        La Nostra Missione: Democratizzare il Lusso
+                    </h1>
+<p class="text-lg text-white/90 leading-relaxed mb-10 font-medium">
+                        Rendiamo accessibile l'ineffabile bellezza dei viaggi di alta classe, trasformando il sogno di esplorare il mondo in una realtà quotidiana e sostenibile.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 rounded-full bg-secondary-container text-on-secondary-container font-bold text-base hover:opacity-90 transition-all editorial-shadow flex items-center gap-2">
+                            Scopri di Più
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Chi Siamo Section -->
+<section class="py-24 bg-surface" id="chi-siamo">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow">
+<img alt="Professional business partners discussing travel strategy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcQfS69BGCbEngQjAdlmXhiWOkVmsEp0JQiaOkhUgvgDgfvmwKWDQiBiv8jCAGGYo6rFO_x_HZrTAdZiGZioqWt9VaLeInid4Zdu-ifLAs3PEFqBahuSIpIx_LC6X4RnKPGbzJtaGmkExhwO47LOrkavwXZRQZwfRg8mVlGNhHSkZXnVjsTXKaJ--AJg3DviH1lEYHdfaQNjfndqy-dBWKMZoc919YaGrxOfGUoQWysUNjqyEvqHvkwbfPhJHHG3-mU2nH4eawkBUu"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-xl hidden lg:block max-w-[280px]">
+<p class="text-white text-sm font-medium italic">"Il viaggio non è solo una destinazione, è un nuovo modo di vedere le cose attraverso il lusso accessibile."</p>
+</div>
+</div>
+<div class="md:col-span-5">
+<label class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-primary mb-4 block">Chi Siamo</label>
+<h2 class="text-[2rem] font-bold text-on-surface mb-8 font-headline leading-tight">Vivere di Viaggi: Il Tuo Portale verso l'Esclusività</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                                Siamo curatori di esperienze, non semplici agenti. <strong>Vivere di Viaggi</strong> nasce dalla visione di rendere il settore delle crociere d'élite un'opportunità aperta a tutti, unendo la passione per la scoperta a una strategia finanziaria intelligente.
+                            </p>
+<p>
+                                Come partner indipendenti di inCruises, operiamo all'intersezione tra lusso e opportunità imprenditoriale. La nostra missione è guidarti attraverso un ecosistema dove il viaggio diventa un investimento sulla tua libertà.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Perché Noi Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 text-center mb-16">
+<h2 class="text-[2rem] font-bold text-on-surface font-headline mb-4">Perché Scegliere Noi?</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Tre pilastri fondamentali per ridefinire il tuo rapporto con il mondo e il tempo.</p>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:translate-y-[-8px] duration-300 group">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white">savings</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-4 font-headline">Risparmio Reale</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Accedi a tariffe esclusive e un sistema di punti premio che ti permette di viaggiare nelle migliori navi da crociera a una frazione del costo di mercato.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:translate-y-[-8px] duration-300 group">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white">beach_access</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-4 font-headline">Viaggi Gratuiti</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Attraverso il nostro programma di Membership Free, potrai azzerare i costi dei tuoi viaggi semplicemente condividendo la tua passione con altri.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:translate-y-[-8px] duration-300 group">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white">monetization_on</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-4 font-headline">Opportunità di Business</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Costruisci la tua carriera nel settore travel. Ricevi pagamenti per aiutare gli altri a vedere il mondo, gestendo il tuo tempo in totale libertà.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Storia Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<label class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-primary mb-4 block">La Nostra Storia</label>
+<h2 class="text-[2.5rem] font-bold text-on-surface font-headline leading-tight">Un Percorso di Libertà</h2>
+</div>
+<div class="md:w-2/3 space-y-12 border-l-2 border-outline-variant/30 pl-12 relative">
+<div class="relative">
+<div class="absolute -left-[54px] top-2 w-4 h-4 rounded-full bg-primary ring-8 ring-surface-container"></div>
+<h4 class="text-lg font-bold text-on-surface mb-2">L'Inizio del Viaggio</h4>
+<p class="text-on-surface-variant leading-relaxed">Siamo partiti con un'unica domanda: perché il lusso deve essere un privilegio di pochi? Abbiamo cercato un modello che potesse scalare il desiderio di esplorazione.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[54px] top-2 w-4 h-4 rounded-full bg-outline-variant"></div>
+<h4 class="text-lg font-bold text-on-surface mb-2">L'Incontro con inCruises</h4>
+<p class="text-on-surface-variant leading-relaxed">Diventare partner indipendenti inCruises è stata la svolta. Abbiamo trovato l'infrastruttura perfetta per offrire valore reale e tangibile ai nostri viaggiatori.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[54px] top-2 w-4 h-4 rounded-full bg-outline-variant"></div>
+<h4 class="text-lg font-bold text-on-surface mb-2">Oggi e il Futuro</h4>
+<p class="text-on-surface-variant leading-relaxed">Oggi Vivere di Viaggi è una community in crescita. Non vendiamo solo crociere; vendiamo la possibilità di riscrivere il proprio futuro professionale navigando i sette mari.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-8">
+<div class="max-w-7xl mx-auto bg-primary rounded-3xl p-12 md:p-20 relative overflow-hidden flex flex-col items-center text-center">
+<img alt="Background Pattern" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB73qvhJMBU8wTLwXzACY2Ylv5Dxdv2oQyXsXt05ior0kxqNKKaWNueg1RoDNWK6E2MeAJ7auRk3ker261Z5sHqVsRTO_XvI3fKGlKoOYkTNveDuRPwM8ijecJEf1I-NfjhVTQKwureuDnNPiwMk4mRFWX-gkHoFmfL2wX8-TgJ1xn6MWk7GfSR-44DiakCVU7hgRkoVTF1nYNigCHqhcqOy0LeU35T_g4isZKgrRnJvLYu9WfV758_jn5bVgOFlPkLM9yzyE5FokVu"/>
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-white/20 rounded-full blur-3xl"></div>
+<h2 class="text-[2rem] md:text-[3rem] font-bold text-white font-headline mb-6 relative z-10">Pronto a Cambiare Orizzonte?</h2>
+<p class="text-white/80 text-lg mb-10 max-w-2xl relative z-10 leading-relaxed">
+                    Unisciti a Vivere di Viaggi e scopri come trasformare la tua passione per il mondo in uno stile di vita senza confini. Contattaci su WhatsApp: <span class="font-bold">379 2529083</span>.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 relative z-10">
+<button class="px-10 py-5 rounded-full bg-white text-primary font-bold text-lg hover:opacity-90 transition-all scale-100 active:scale-95 shadow-lg">
+                        Scopri Come Iniziare
+                    </button>
+<a class="px-10 py-5 rounded-full border-2 border-white text-white font-bold text-lg hover:bg-white hover:text-primary transition-all scale-100 active:scale-95 flex items-center gap-2" href="https://wa.me/393792529083">
+                        Contattaci
+                        <span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-slate-50 dark:bg-slate-900 mt-12 border-t border-slate-200">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<a href="index.html">
+<img alt="Vivere di Viaggi Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</a>
+<p class="text-slate-500 text-sm font-medium">WhatsApp: 379 2529083</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-headline text-sm font-semibold text-slate-600 uppercase tracking-widest">
+<a class="hover:text-primary transition-all cursor-pointer" href="index.html">Home</a>
+<a class="hover:text-primary transition-all cursor-pointer" href="destinazioni.html">Destinazioni</a>
+<a class="hover:text-primary transition-all cursor-pointer" href="chi-siamo.html">Chi Siamo</a>
+<a class="hover:text-primary transition-all cursor-pointer" href="membership.html">Membership</a>
+<a class="hover:text-primary transition-all cursor-pointer" href="contatti.html">Contatti</a>
+</div>
+<div class="text-slate-400 font-body text-xs text-center md:text-right space-y-2">
+<p>© 2024 Vivere di Viaggi. All rights reserved.</p>
+<p>Independent inCruises Partner.</p>
+<div class="flex justify-center md:justify-end gap-4 mt-4">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

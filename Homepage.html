@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivere di Viaggi - Independent inCruises Partner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#262e43",
+                    "tertiary": "#555e74",
+                    "inverse-surface": "#283044",
+                    "surface-dim": "#d1daf4",
+                    "on-primary-fixed-variant": "#00458f",
+                    "surface": "#faf9ff",
+                    "on-surface-variant": "#424753",
+                    "inverse-on-surface": "#edf0ff",
+                    "inverse-primary": "#abc7ff",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#fea520",
+                    "secondary": "#865300",
+                    "on-surface": "#121b2e",
+                    "on-secondary-fixed": "#2b1700",
+                    "secondary-fixed": "#ffddb9",
+                    "surface-variant": "#dae2fd",
+                    "primary-container": "#5395fd",
+                    "on-secondary-container": "#694000",
+                    "surface-container-low": "#f1f3ff",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#727784",
+                    "tertiary-container": "#8d96ae",
+                    "on-primary-container": "#002d62",
+                    "surface-bright": "#faf9ff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#3e475c",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#ffb961",
+                    "tertiary-fixed-dim": "#bec6e0",
+                    "surface-container-high": "#e1e8ff",
+                    "outline-variant": "#c2c6d5",
+                    "on-background": "#121b2e",
+                    "surface-tint": "#5395FD",
+                    "surface-container": "#e9edff",
+                    "on-tertiary-fixed": "#121b2e",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#faf9ff",
+                    "primary": "#5395FD",
+                    "on-primary-fixed": "#001b3f",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#abc7ff",
+                    "tertiary-fixed": "#dae2fd",
+                    "primary-fixed": "#d7e2ff",
+                    "on-secondary-fixed-variant": "#663e00",
+                    "surface-container-highest": "#dae2fd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-2 max-w-7xl mx-auto">
+<div class="flex items-center py-1">
+<a href="index.html">
+<img alt="Vivere di Viaggi Logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-medium tracking-tight text-primary border-b-2 border-primary pb-1" href="destinazioni.html">Destinazioni</a>
+<a class="font-headline font-medium tracking-tight text-slate-600 hover:text-primary transition-colors duration-300" href="chi-siamo.html">Missione</a>
+<a class="font-headline font-medium tracking-tight text-slate-600 hover:text-primary transition-colors duration-300" href="membership.html">Opportunità</a>
+<a class="font-headline font-medium tracking-tight text-slate-600 hover:text-primary transition-colors duration-300" href="membership.html">Prezzi</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-4">
+<button class="px-6 py-2 rounded-lg font-label text-xs uppercase tracking-widest text-primary hover:bg-primary-fixed transition-colors">Entra nel Club</button>
+<img alt="Vivere di Viaggi Logo Mini" class="h-8 w-auto object-contain opacity-50" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</div>
+<button class="px-6 py-2 rounded-lg bg-primary text-on-primary font-medium scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">Diventa Partner</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Ultra-luxury cruise ship at sunset with crystal clear reflection" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBkl9AKWDQwBIjYLuPJZUN3poR3knwFu77T6G17fC6B-Z_DYFXb7h3JHxPXoaa8x8hzOC34os-ZyYLqTXBBmrmhr-JrDX2ymgL9kW5qSgx6hPGci9saDcZddkp4Tc3JGPEUUsJtSevaTHJJ-dr3c6ANyUH-dqrfMFCD_JECh30oW8S599iuHnSbgZ5wKumM13-cgBXgo1pPJslJXH_uRKxOUBwcbgF8yLZcM_VQka1l-MZDynl0qQcycZb6JxWmmUPjEMzKyxWnkBO"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-lg font-label text-xs font-bold tracking-widest mb-6 uppercase shadow-lg shadow-secondary-container/20">Esclusivo inCruises Partner</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-tight mb-6 tracking-tight">
+                Il Mondo è il Tuo <span class="text-secondary-container">Portfolio.</span>
+</h1>
+<p class="text-lg md:text-xl text-white/95 mb-10 leading-relaxed font-light">
+                Curiamo esperienze di viaggio di lusso accessibili a tutti. Unisciti al club più prestigioso per crocieristi e trasforma la tua passione in un business senza confini.
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-secondary-container text-on-secondary-container rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all shadow-2xl shadow-secondary-container/20">
+                    Join Now
+                </button>
+<button class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-lg font-bold text-lg hover:bg-white/20 transition-all">
+                    Scopri le Offerte
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Cruise Partners Section -->
+<section class="py-20 bg-white border-b border-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-headline font-extrabold text-on-surface tracking-tight uppercase">Le Compagnie di Crociera Partner</h2>
+<div class="h-1.5 w-24 bg-secondary-container mx-auto mt-6 rounded-full"></div>
+</div>
+<div class="flex justify-center items-center">
+<div class="w-full max-w-5xl">
+<img alt="Premium Cruise Line Partners" class="w-full h-auto object-contain mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiU7opk561p6lkpdlBBgkI8HzV14vt1ROvM5Lnllz1txlseVyJHi6l_PDmOVhFBw12tZZ58TAJGr8Ztx771SwhG7xT04OiWTZzkv7NxLimmIorv7Fu_idIJ3VXSnTDPXq7h648U30naCVxAeWC7jXXFFDXjmqSYvRMAGt_wnxl0Lb2cJC6QFeKQ2mHgxc5kMU8JMArtLHJVYhCz7k7Lf_y6O5KbWFcGKae8JiwgQrbqzm8wXuyWmCJweVShIYWUS6d3wmMxEldcz3w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Features Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-4">L'Eccellenza del Viaggio</h2>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Travelers Club -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-lg relative overflow-hidden group shadow-sm border border-outline-variant/15">
+<div class="relative z-10">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">travel_explore</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Travelers Club</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8 max-w-md">
+                        Accedi a tariffe esclusive e un sistema di Reward Points unico al mondo. Risparmia su ogni prenotazione e viaggia più spesso con la tua famiglia.
+                    </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                            Accesso a oltre 20.000 itinerari globali
+                        </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                            Raddoppia il valore del tuo risparmio
+                        </li>
+</ul>
+<a class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all" href="membership.html">
+                        Esplora i vantaggi <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="absolute -right-10 -bottom-10 w-80 h-80 opacity-10 group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+<img alt="Premium travel details" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABmPLIp3toDm5KwQSjiUjXC9xTYGgBqevcGe0PmNskzAO7KZcNA-YKZGuUwL5_OjAHEBkh9-Tx4uamnXbUOTT-fe8kKxLWkI0tDJeJLBptCRJuo7tElOQ6MYlyjvodb93bSOW06Y8cnDRoY5hPnq-ys0dTxela26_PvXKkdhez9Ofaj_rD0H9CmFpSWYBEDFP21SjO_7wmenX8nO6QB5J7Jz5RWL7j_4PQo_XlLqK4eYpjIpyEG-BV8_bGFA2TcrHaBXhNOUcrMy0T"/>
+</div>
+</div>
+<!-- Partner Opportunity -->
+<div class="md:col-span-5 bg-primary text-on-primary p-10 rounded-lg flex flex-col justify-between shadow-2xl shadow-primary/20 relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<img alt="Professional business background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVwq5_miovU0oCbzPFAHrJmhmoou66XsGwy50pxisIJnodo4xV2i1T1jY8bwkaHFW4ke9GRtAZOab8tB2yhCQrC8L_jLb7cwr4V_6B8sdipskzlTnGNZzTZU8CTWUyEFhfr08xwlSbpxFSyjQcW54nnDLPqtygwVloTWgo_i_dLbKfh0RyC5cOWYNlXEHb-omq8B0ffeCXcQqPuc0McnOwScZa7ouaE4ITIKFEcOKv09VLpldAJSsAD4ZD0Ucv_-5bGWMeDGAXUtmM"/>
+</div>
+<div class="relative z-10">
+<div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white">work</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Partner Opportunity</h3>
+<p class="text-white/90 leading-relaxed">
+                        Trasforma la tua passione per il mare in una carriera flessibile e redditizia. Diventa un distributore indipendente.
+                    </p>
+</div>
+<div class="mt-12 relative z-10">
+<button class="w-full py-4 bg-secondary-container text-on-secondary-container rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-105 transition-all">
+                        Inizia Oggi
+                    </button>
+</div>
+</div>
+<!-- Small Grid Items -->
+<div class="md:col-span-4 bg-surface-container p-8 rounded-lg border border-outline-variant/15 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-4">security</span>
+<h4 class="font-headline font-bold text-lg mb-2 text-on-surface">Sicurezza Totale</h4>
+<p class="text-sm text-on-surface-variant">Protezione Trust My Travel per ogni tuo contributo finanziario.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container p-8 rounded-lg border border-outline-variant/15 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-4">public</span>
+<h4 class="font-headline font-bold text-lg mb-2 text-on-surface">Community Globale</h4>
+<p class="text-sm text-on-surface-variant">Unisciti a migliaia di membri in oltre 190 paesi nel mondo.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container p-8 rounded-lg border border-outline-variant/15 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-4">trending_up</span>
+<h4 class="font-headline font-bold text-lg mb-2 text-on-surface">Crescita Esponenziale</h4>
+<p class="text-sm text-on-surface-variant">Formazione costante e strumenti digitali all'avanguardia.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Registration / Lead Gen Section -->
+<section class="py-24 bg-white" id="contatti">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+<img alt="Elegant couple on a balcony overlooking the Mediterranean sea" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxaBRfTHE3eR6uJQ4SHDDftsvuQ_i8oogxyQ0c_uOzDwaz5iIPlkJ8C-ICasv_FACe22CRgrYA4m-5h41qAl3YSVBgBYxIQdYu7mV2mo_az6r9U1qm2-qQZKQvjkjjmml6XFi6Z3EHh_HNN65L50wYryR5Y-x3Xd2bNB0ho0qFBd9gZ6R-vgVVHgz0gvjBYt-FUscDpKQeNWF-GbRTSBqv7kdSgT69a3qjeF8CRQCpBdj0mo0bqI0WK8-9A4lft-CiceRjShr_wJUN"/>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-xl border border-outline-variant/10 max-w-[200px]">
+<div class="flex items-center gap-2 mb-2 text-secondary font-bold">
+<span class="material-symbols-outlined">stars</span>
+                    5.0 Rating
+                </div>
+<p class="text-xs text-on-surface-variant italic">"La miglior decisione per i nostri viaggi in famiglia."</p>
+</div>
+</div>
+<div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-6">Pronto per salpare?</h2>
+<p class="text-on-surface-variant mb-10 text-lg leading-relaxed">
+                Sia che tu voglia risparmiare sulla tua prossima vacanza da sogno o costruire un business digitale indipendente, il momento di agire è adesso.
+            </p>
+<div class="space-y-8">
+<!-- Action Card 1 -->
+<div class="flex gap-6 p-6 rounded-lg hover:bg-surface-container-low transition-colors group cursor-pointer border border-transparent hover:border-outline-variant/20">
+<div class="flex-shrink-0 w-14 h-14 bg-primary rounded-lg flex items-center justify-center text-on-primary shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined">person_add</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-1">Registrati Indipendentemente</h4>
+<p class="text-sm text-on-surface-variant mb-3">Crea il tuo profilo in meno di 2 minuti e accedi subito al catalogo.</p>
+<a class="text-primary font-bold text-sm underline" href="membership.html">Crea Account →</a>
+</div>
+</div>
+<!-- WhatsApp Qualification Form -->
+<div class="p-8 bg-surface-container-low rounded-lg shadow-inner border border-outline-variant/10">
+<h4 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">chat</span>
+                        Modulo di Qualificazione WhatsApp
+                    </h4>
+<div class="space-y-5" id="whatsapp-survey">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant">Ami viaggiare?</label>
+<select class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-primary focus:border-transparent" id="survey-love-travel">
+<option value="Sì">Sì</option>
+<option value="No">No</option>
+<option value="Sempre!">Sempre!</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant">Hai già fatto crociere?</label>
+<select class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-primary focus:border-transparent" id="survey-done-cruise">
+<option value="Sì">Sì</option>
+<option value="No, mai">No, mai</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant">Quando vuoi partire?</label>
+<input class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-primary focus:border-transparent" id="survey-date" type="date"/>
+</div>
+<button class="w-full py-4 bg-[#25D366] text-white rounded-lg font-bold hover:brightness-110 shadow-lg shadow-green-500/20 transition-all flex items-center justify-center gap-2" onclick="sendWhatsAppMessage()" type="button">
+                            Invia su WhatsApp <span class="material-symbols-outlined text-xl">chat</span>
+</button>
+<div class="flex items-center justify-center gap-2 mt-4 pt-4 border-t border-outline-variant/10">
+<span class="material-symbols-outlined text-sm text-green-600">security</span>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium">Connessione sicura crittografata con WhatsApp</p>
+</div>
+</div>
+<script>
+                        function sendWhatsAppMessage() {
+                            const loveTravel = document.getElementById('survey-love-travel').value;
+                            const doneCruise = document.getElementById('survey-done-cruise').value;
+                            const travelDate = document.getElementById('survey-date').value || "Non specificato";
+                            
+                            const phoneNumber = "393792529083";
+                            const message = `Ciao! Vorrei ricevere informazioni sulle crociere.\n\n` +
+                                            `Amo viaggiare: ${loveTravel}\n` +
+                                            `Già fatto crociere: ${doneCruise}\n` +
+                                            `Intenzione di partire: ${travelDate}`;
+                            
+                            const encodedMessage = encodeURIComponent(message);
+                            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                            
+                            window.open(whatsappUrl, '_blank');
+                        }
+                    </script>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+<div class="md:col-span-4">
+<div class="mb-8">
+<img alt="Vivere di Viaggi Logo" class="h-20 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">
+                    Partner indipendente inCruises. Specializzati nella consulenza e gestione di abbonamenti club per crociere di lusso. Esplora il mondo con noi.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-lg border border-slate-300 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all shadow-sm" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="w-10 h-10 rounded-lg border border-slate-300 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all shadow-sm" href="contatti.html"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+<div class="md:col-span-2 pt-4">
+<h5 class="font-bold text-primary mb-4 uppercase text-xs tracking-widest">Azienda</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-all uppercase tracking-wide font-label" href="chi-siamo.html">Missione</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-all uppercase tracking-wide font-label" href="chi-siamo.html">Valori</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-all uppercase tracking-wide font-label" href="membership.html">Opportunità</a></li>
+</ul>
+</div>
+<div class="md:col-span-2 pt-4">
+<h5 class="font-bold text-primary mb-4 uppercase text-xs tracking-widest">Supporto</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-all uppercase tracking-wide font-label" href="contatti.html">Contatti</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-all uppercase tracking-wide font-label" href="#">FAQ</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-all uppercase tracking-wide font-label" href="#">Aiuto</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 pt-4">
+<p class="text-sm text-slate-500 mb-4">Ricevi le migliori offerte per crociere direttamente nella tua inbox.</p>
+<div class="flex gap-2">
+<input class="flex-grow bg-white border border-slate-200 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-primary" placeholder="La tua email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg px-4 text-sm font-bold uppercase shadow-lg shadow-primary/20">Vai</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-label text-[10px] tracking-widest uppercase text-slate-400">© 2024 Vivere di Viaggi - Independent inCruises Partner. Tutti i diritti riservati.</div>
+<div class="flex gap-6">
+<a class="text-slate-400 text-[10px] hover:text-primary font-label uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-slate-400 text-[10px] hover:text-primary font-label uppercase tracking-widest" href="#">Termini e Condizioni</a>
+<a class="text-slate-400 text-[10px] hover:text-primary font-label uppercase tracking-widest" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

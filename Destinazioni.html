@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#283044",
+                    "on-surface-variant": "#424753",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#d7e2ff",
+                    "error": "#ba1a1a",
+                    "outline": "#727784",
+                    "tertiary": "#555e74",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#8d96ae",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#ffb961",
+                    "surface-variant": "#dae2fd",
+                    "surface-container-low": "#f1f3ff",
+                    "inverse-on-surface": "#edf0ff",
+                    "on-secondary-container": "#694000",
+                    "surface": "#faf9ff",
+                    "tertiary-fixed": "#dae2fd",
+                    "surface-bright": "#faf9ff",
+                    "on-tertiary-fixed-variant": "#3e475c",
+                    "on-primary-container": "#002d62",
+                    "surface-tint": "#5395FD",
+                    "primary-fixed-dim": "#abc7ff",
+                    "outline-variant": "#c2c6d5",
+                    "inverse-primary": "#abc7ff",
+                    "surface-dim": "#d1daf4",
+                    "on-secondary-fixed-variant": "#663e00",
+                    "surface-container-high": "#e1e8ff",
+                    "surface-container-highest": "#dae2fd",
+                    "on-surface": "#121b2e",
+                    "on-tertiary-container": "#262e43",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#2b1700",
+                    "secondary-container": "#fea520",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#121b2e",
+                    "background": "#faf9ff",
+                    "primary-container": "#5395fd",
+                    "on-tertiary-fixed": "#121b2e",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffddb9",
+                    "primary": "#5395FD",
+                    "on-primary-fixed-variant": "#00458f",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#bec6e0",
+                    "on-primary-fixed": "#001b3f",
+                    "surface-container": "#e9edff",
+                    "secondary": "#865300"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(18, 27, 46, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md shadow-sm dark:shadow-none no-border transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
+<a class="flex items-center gap-3" href="index.html">
+<img alt="Vivere di Viaggi Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<div class="text-xl font-bold text-primary dark:text-white tracking-tighter">Vivere di Viaggi</div>
+</a>
+<div class="hidden md:flex items-center gap-8 font-medium text-sm tracking-tight">
+<a class="text-primary border-b-2 border-secondary-container pb-1 hover:opacity-80 transition-opacity" href="destinazioni.html">Destinazioni</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white hover:opacity-80 transition-opacity" href="membership.html">Membership</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white hover:opacity-80 transition-opacity" href="chi-siamo.html">Chi Siamo</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white hover:opacity-80 transition-opacity" href="contatti.html">Contatti</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block text-slate-600 dark:text-slate-300 font-medium text-sm hover:opacity-80 transition-opacity">Login</button>
+<div class="flex items-center gap-3">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg text-sm font-bold scale-95 active:scale-90 duration-200 hover:opacity-90 transition-opacity">Join Now</button>
+<img alt="Vivere di Viaggi Logo" class="h-8 w-auto object-contain hidden lg:block" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+</div>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[870px] min-h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Amalfi Coast Sunset" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALdJQxP5423FYtvaU5DbsE6KGXd4CM3jy9D0UOVeZpFAh0mP_pREydw6GTy69VWK6fNCod2DpP_x9L5oxJT-Cx6zcWHrpH-ogK2sCrYfVNQ3LU5_kx9p-0WMjhZMNftgZvFUn2fkfpI8OxKJ31l4LukQFm417SzfoQdLib6EVQ3zZWHKcCCz0Loh4W6-Z7GmX3Ufi4ltEpYUmzLeK2n_rr1GX0lDB6MGMNgTg-gc-vSmdGnMuLttQksmZYOhG14cPoUZzuPn0ZHhik"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface/70 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block font-label text-white bg-secondary-container/90 px-4 py-1 rounded-full text-[10px] uppercase tracking-widest mb-6">Explore the Horizon</span>
+<h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6 text-shadow-sm">
+                    Esplora il Mondo <br/><span class="text-primary-container">con Noi</span>
+</h1>
+<p class="text-white/90 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+                    Scopri il privilegio di viaggiare attraverso i mari più belli, soggiornando in resort da sogno con la flessibilità esclusiva del club inCruises.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-secondary-fixed transition-colors flex items-center gap-2" href="destinazioni.html">
+                        Scopri Destinazioni
+                        <span class="material-symbols-outlined">explore</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Le Nostre Destinazioni -->
+<section class="py-24 bg-surface px-8" id="destinazioni">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-surface tracking-tight mb-4">Le Nostre Destinazioni</h2>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed">Dai ghiacci millenari dell'Alaska alle acque cristalline dei Caraibi, curiamo itinerari che trasformano ogni viaggio in un'opera d'arte.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<div class="md:col-span-8 group relative overflow-hidden rounded-lg bg-surface-container-highest">
+<img alt="Santorini Mediterranean View" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApl4F5lqO77VYFppskjyuB7xarwschh50Wh4rhwTrck2l3aGc3lf9TlFNP_IdBWjf6Fbm8UOVmnDSS_Gv2nHL140TtKeTqkUEHhvKcIuM8dcqznn3MQbqCxzaziv7meyjnO7DH3TeSOn7x5VBos9NENgWqwxftBJ5UhTTDXi32CnJlgtzpaIp6K3jEBfR0LVlTDGr11WAjvl-Ck_i-W_D-5FDkIPZZBe88kOPcKoFLk03Jmmk4gjGV6ScO5U69uLAqB9cFiq3lipHN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<h3 class="text-2xl font-bold text-white mb-2">Mediterraneo</h3>
+<p class="text-white/80 max-w-md italic">Culla di civiltà, dove il blu incontra la storia tra porti antichi e sapori intramontabili.</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-highest">
+<img alt="Alaska Glaciers" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQSdcUo5oBGRHYR5KAf1Xc1_Ykth2mmEAAG68AhAh9F5-2oM_4cv-l3g6PNg42_R7kRZZxFSrfu_wrCMzHel-ydNamK-NL9Q_4Js_WFx6YUZqCJL8p0WfLJtBMrviZl_LXsJJoG4NFg-DbTpmBF4cSzDEJeoKPveZx5h2lANeaWm5sJx0ck6V2idtWT-Pg2i-n9zfZFORzroihaRTqWH3AYPT9QHtZnXI_9NCwl3uY8HWaY3mWZ7MOG4J3HnceEcrPAoQ0sYDT48uK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<h3 class="text-xl font-bold text-white mb-2">Alaska</h3>
+<p class="text-white/80 text-sm">Il respiro selvaggio della natura tra ghiacciai maestosi.</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-highest">
+<img alt="Turks and Caicos Beach" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzfWZRZQYdiwtKlNLGsj5fmugYERKtePDrWQUn5uOBtjX0C6aj0IGeomlC9TLP0eiz4h6z8URBshczRjU8x_C74m8E0zFEzv3eAa4ddizDfsLrgKbcouLllJPzEXy_rFHK22q3x54vWOOiIeea_-5GXvkXfYXjg0nUGTmHjyTUA0wij_0tj8cEl4vtN2qSf2c-2_FXwvagedAltAoc9Re2FBADKN-TSzPA42UhOSEdDEQraN865py4-SHhPZmiYlU_oMarEMuWE0PZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<h3 class="text-xl font-bold text-white mb-2">Caraibi</h3>
+<p class="text-white/80 text-sm">Sabbia come seta e acque turchesi.</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-highest">
+<img alt="Kyoto Temple Autumn" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPr5XlGtrCKo07qHLHkrJVkH3661yPPRTLgCI6Q7V_Aq0Er-IoinGZB1u2uSOmguTtmNniDXLdQI2ts5arMdzbCN35Tb0vj4w9cThe64ETEn2ESx2fJzb7M7BfaEK4pWBGSbhLsPgPAHtSVQpBMw-bp2rv01tLFVoBNEPA1r9t-75w7-DZyJyajizqXE81uFM-aYwF9CyTE7QtDQ4cI_fRRfLFTxnt9hiHlyqZu5ihudixlB0WPr_hCTgX-nM2kZw121soBn3DKeVY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<h3 class="text-xl font-bold text-white mb-2">Asia</h3>
+<p class="text-white/80 text-sm">Contrasto tra templi e metropoli futuristiche.</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-highest">
+<img alt="Norwegian Fjords" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDanR4Ocoxv63IhYi20OGYaP6YT16jMQDuDjdEz-vs9C5Gc-VrV_qrqOeUg-rARUk-fCs5Rnc4Bukgd9AGi3aTxzv_eTchDCMCNrlaspj9tAWSxF3NULgzJGOvyAwuf4bUzxoIlGghXcb_TPpV3PzdwiSzSvZSc173-qMM1Qwhg2MwfuhXD9tOf3CYtXLOEv84ypc8TOutOx5vqiCpzMpDsvisn2uJzXEe_SZCJU5oIxB4FL0VANujQAWKh2nzof-7jtSRMGo0TKCAA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<h3 class="text-xl font-bold text-white mb-2">Nord Europa</h3>
+<p class="text-white/80 text-sm">La poesia dei fiordi e luci del nord.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Esperienze a Bordo -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2 space-y-8">
+<h2 class="font-headline text-4xl font-bold text-on-surface leading-tight">Esperienze a Bordo: <br/>Un Hotel 5 Stelle che Viaggia con Te</h2>
+<div class="space-y-6">
+<div class="flex gap-4 group">
+<div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Fine Dining</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Piatti gourmet preparati da chef di fama mondiale, con menu che cambiano seguendo le tappe del tuo viaggio.</p>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Spa &amp; Benessere</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Trattamenti rigeneranti e percorsi termali con vista sull'infinito del mare aperto.</p>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">theater_comedy</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Entertainment Class-A</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Show stile Broadway, musica dal vivo e casinò eleganti per serate indimenticabili.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 relative">
+<div class="relative z-10 w-4/5 ml-auto">
+<img alt="Luxury Cruise Restaurant" class="rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdOdLh4zT5gccWw3kts15n575BLiIXyteDqsD0eIw3WF4PwMAOI4OaFFhl1jq0LqLZjBz2ROVqgyVooEMNKqy7dB6tlYNpp1D-Gd5aNkqUg-E1rHJ_uf-tZ6pVwmfizWg4K8Rzix_ZnHGDlUN3XIIw84D3K5MGbZzQnFSP80fttJdklrLepnAoWWBZUrWU1xEzlgg94vMwpNnrvwRgccjLYxh7qT3B-Gy4lB7xX56pro0X5_jub5GitaGumGVCVpXDagI0h6ErIxcf"/>
+</div>
+<div class="absolute top-1/4 -left-10 z-20 w-1/2">
+<img alt="Luxury Cruise Spa" class="rounded-lg shadow-xl border-4 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDva6wqUCSjAO7UINMbBFH4YsMMf-WkWUcnlDtjuzH-k-xxeNlITZFekkvg4sh6YG7D807XwpffDVKCdQTZj_ZH0Gg2hvK4MI15qJVQoJdvqoFhhZb0BfjshE9FM4t7r4072GyTBhB8HI5pF9yCKnrekJfroxuDaKXflwMvx1tHDNX14NrYsXM02uVuKk8QfyuOIU6tnhTWqn36vkdTsqSCusNhhvPHfdG5YpmKjY66OeP71ZeRSXDhcs7NwI52hGrSnmtrg0VYSoDt"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Resort Esclusivi -->
+<section class="py-24 bg-surface px-8">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Resort Esclusivi</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Non solo crociere. Con la nostra membership inStays, hai accesso a migliaia di resort e hotel di lusso in tutto il mondo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden rounded-lg mb-6">
+<img alt="Overwater Bungalow Maldives" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6ErpLySwGhBmFILQh2CjKS5T5zEC-LuM6_2U86hkT2l1hEDFRrYSieqZiyutJNFKOGN57Du74ng0AWffvtXvUEoU6IlTQOTXa_V8-5ERVJX5Jx8kRLxXBGnOTx-Dj9EM0QGDLQJ2b2LSUsAQt24iM87JN40GmYQspJeD0B6Dh8evZeNKG-rWcAEc0Zkn35Jde6lRueKbERPriZgpyoQp2ECKLs8bd__zfpfPw44dVd-h2wvMyLY-RTizW2FBV4lFmLe__sW8oGtut"/>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Soggiorni Stanziali</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Goditi la stabilità di un resort di lusso con accesso diretto alle spiagge più belle.</p>
+<span class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2">Scopri di più <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow group border-t-4 border-primary">
+<div class="h-48 overflow-hidden rounded-lg mb-6">
+<img alt="Modern Luxury Hotel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAWTI_m5kkqw0uPcMk3kbGip0Gc27WZKKPIxrBqyLp8MF24zrLsNrGSvagC4l4m5kuktUSLp9vq5p9oqtWo_nW3v9ncwLXEh7YAGLC21N2cIzhhzz_k4LOUktqFhZ66J7RSGtO59q6X5fnxz3MC-OrdLisWFy-L93JC8yUepORkSSj-iyUHeMNIyISrR-negppGBiIFwv5o30Ksjq2o2DofPGkEsf9TQNgW6VP_dPCFriXfb_6Wcrw16j_J9Xek5gghlzmOWw9hKV5"/>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Membership Flessibile</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Utilizza i tuoi Reward Points per prenotare sia crociere che hotel di lusso.</p>
+<span class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2">I vantaggi del club <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden rounded-lg mb-6">
+<img alt="Tropical Resort Pool" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYf8gVNCttAStu7YU7eRmAMulHNrUt6XJIZ9EMOD-zqc80B7PSEPJiP6RPnXOVh6ZWEUJqBiXWMmI3fLel4jAs4bnpVP5KWrQf6fdknLrRzNxNmXgYEzHFzF_MMOVcKeOt1HtTxppFtiUApdkQlRwXXtKQgZDl3iBBVTF9JZgqLGRZo2Z74qgBz02K9SR6zCaP0NatCTsjKaYMn7Twwn64q_JfAiQmSNVWn-1AxakMuwy5lQBUkXmsfQKpeSmYAZcFl3gUYNHAyz-f"/>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Destinazioni Globali</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Oltre 25.000 opzioni tra resort all-inclusive e boutique hotel in ogni continente.</p>
+<span class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2">Vedi la mappa <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-primary-container relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-90 z-0"></div>
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-white/10 rounded-full blur-3xl z-0"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-8 text-center text-on-primary">
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Prenota la Tua Prossima Avventura</h2>
+<p class="text-xl mb-10 opacity-90 leading-relaxed">Entra a far parte della più grande community di viaggiatori al mondo. Inizia a pianificare oggi il viaggio che hai sempre sognato.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-lg font-bold text-lg shadow-xl hover:scale-105 transition-transform duration-200">
+                    Unisciti Ora
+                </button>
+<a class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/20 transition-colors flex items-center justify-center gap-2" href="https://wa.me/393792529083" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                    WhatsApp: 379 2529083
+                </a>
+</div>
+<p class="mt-8 text-sm opacity-70 font-label tracking-widest uppercase">Nessun costo nascosto. Massima trasparenza.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-16 px-8 border-t border-outline-variant">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Vivere di Viaggi Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujpF46CzlNkPW2wpz8TBobk5P4ovnLYxP4NTxXsupcicZbxDJlcsQ8s95izUfBRi46EvZJ_g7ieAhwem_7_3_oU3XNp6-2AZlBVvGcDY-km7pbeIpLM5KB_7tbF9WfoaSwIa3rpmEkCpIBGZyAujZ2CsU_in4mvQLrzokVulXT5i2iYlBIG6sjnYCWHahi7902X-DlxXlBjjw6OrkyWICyqHtQgws7LEWJbWwav_5Dpw8xoimD1POHarvulhe3YUYgY7KipgDzWIYI"/>
+<div class="text-2xl font-black text-primary dark:text-white">Vivere di Viaggi</div>
+</div>
+<p class="text-on-surface-variant max-w-xs text-sm leading-relaxed">
+                    Siamo partner indipendenti inCruises, dedicati a portarti verso le destinazioni più sognate con il massimo della convenienza e del lusso.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div class="space-y-4">
+<h5 class="font-bold text-on-surface text-sm uppercase tracking-wider">Navigazione</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="index.html">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="destinazioni.html">Destinazioni</a></li>
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="membership.html">Membership</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-on-surface text-sm uppercase tracking-wider">Azienda</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="chi-siamo.html">Chi Siamo</a></li>
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="contatti.html">Contatti</a></li>
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="https://wa.me/393792529083">Supporto WhatsApp</a></li>
+</ul>
+</div>
+<div class="space-y-4 col-span-2 sm:col-span-1">
+<h5 class="font-bold text-on-surface text-sm uppercase tracking-wider">Legale</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary text-sm transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-on-surface-variant font-medium text-xs text-center md:text-left leading-relaxed">
+                © 2024 Vivere di Viaggi. All rights reserved. Independent inCruises Partner.
+            </div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="https://wa.me/393792529083"><span class="material-symbols-outlined">chat</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
